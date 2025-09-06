@@ -5,23 +5,22 @@ const DataSchema = new mongoose.Schema({
         type: String,
         require: true,
     },
-    company:{
+    category:{
         type: String,
         require: true,
     },
-    description:{
+    img:{
         type: String,
         require: true,
     },
-    time:{
+    link:{
         type: String,
-        require: true,
     }
 },{
     timestamps: true,
     versionKey: false,
 })
 
-const experienceModel = mongoose.model('experiences',DataSchema)
+const portfolioModel = mongoose.model('portfolios',DataSchema)
 
-module.exports = experienceModel;
+module.exports = portfolioModel;

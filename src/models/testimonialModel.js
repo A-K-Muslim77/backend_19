@@ -1,27 +1,26 @@
 const mongoose  = require('mongoose')
 
 const DataSchema = new mongoose.Schema({
-    title:{
+    clientName:{
         type: String,
         require: true,
     },
-    company:{
+    address:{
         type: String,
         require: true,
     },
-    description:{
+    img:{
         type: String,
         require: true,
     },
-    time:{
+    feedback:{
         type: String,
-        require: true,
     }
 },{
     timestamps: true,
     versionKey: false,
 })
 
-const experienceModel = mongoose.model('experiences',DataSchema)
+const testimonialModel = mongoose.model('testimonials',DataSchema)
 
-module.exports = experienceModel;
+module.exports = testimonialModel;

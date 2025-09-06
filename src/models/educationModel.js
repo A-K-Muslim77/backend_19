@@ -5,7 +5,7 @@ const DataSchema = new mongoose.Schema({
         type: String,
         require: true,
     },
-    company:{
+    institute:{
         type: String,
         require: true,
     },
@@ -22,6 +22,6 @@ const DataSchema = new mongoose.Schema({
     versionKey: false,
 })
 
-const experienceModel = mongoose.model('experiences',DataSchema)
+const educationModel = mongoose.model('educations',DataSchema)
 
-module.exports = experienceModel;
+module.exports = educationModel;

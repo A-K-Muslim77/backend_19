@@ -5,23 +5,18 @@ const DataSchema = new mongoose.Schema({
         type: String,
         require: true,
     },
-    company:{
-        type: String,
-        require: true,
-    },
     description:{
         type: String,
         require: true,
     },
-    time:{
+    img:{
         type: String,
-        require: true,
     }
 },{
     timestamps: true,
     versionKey: false,
 })
 
-const experienceModel = mongoose.model('experiences',DataSchema)
+const serviceModel = mongoose.model('services',DataSchema)
 
-module.exports = experienceModel;
+module.exports = serviceModel;

@@ -1,19 +1,19 @@
 const mongoose  = require('mongoose')
 
 const DataSchema = new mongoose.Schema({
-    title:{
+    name:{
         type: String,
         require: true,
     },
-    company:{
+    email:{
         type: String,
         require: true,
     },
-    description:{
+    website:{
         type: String,
-        require: true,
+        
     },
-    time:{
+    message:{
         type: String,
         require: true,
     }
@@ -22,6 +22,6 @@ const DataSchema = new mongoose.Schema({
     versionKey: false,
 })
 
-const experienceModel = mongoose.model('experiences',DataSchema)
+const contactModel = mongoose.model('contacts',DataSchema)
 
-module.exports = experienceModel;
+module.exports = contactModel;
